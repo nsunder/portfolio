@@ -6,9 +6,10 @@
   <meta name="keywords" content="portfolio,know,about,navya,sunder,reddy,chalimidi">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Sunder Portfolio </title>
-  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
 
 <style>
 
@@ -42,7 +43,7 @@ h1{
   color:white;
 }
 
-h2{
+h3{
   color: white;
 }
 
@@ -104,53 +105,54 @@ h2{
 
 
 </style>
+
+<script   src="https://code.jquery.com/jquery-3.1.0.js"   ></script>
 </head>
 <body>
-  <header class="navbar-inverse">
-  <div class="conatiner-fluid">
-        <nav>
+  <header >
+        <nav class="navbar-inverse">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+              <a class = "navbar-brand" href = "#">Sunder Chalimidi</a>
 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                  <li><a href="#">Sunder Chalimidi</a></li>
-              </ul>
+            <div class="collapse navbar-collapse" id="bs">
 
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="nav-item active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Portfolio</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-    </div>
 </header>
 <div class="pageOne imageparent">
-
-    <div class="intro ">
-        <h1> Sunder Chalimidi </h1>
-        <h2> Purdue University- Computer Engineering</p2>
+<div class="row">
+    <div class="intro">
+        <h1 class="col-xs-12"> Sunder Chalimidi </h1>
+        <h3 class="col-xs-12"> Purdue University- Computer Engineering</h3>
     </div>
+  </div>
+  <div class="row">
     <div class="bl">
             <div class="btnList text-center">
-                <a class="btn btn-default" href="https://github.com/nsunder" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-                <a class="btn btn-default" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-                <a class="btn btn-default" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
-                <a class="btn btn-default" href="https://twitter.com/NavyaSundar23" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="https://github.com/nsunder" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="https://twitter.com/NavyaSundar23" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
             </div>
     </div>
+  </div>
 
 </div>
 
@@ -167,8 +169,8 @@ h2{
    </div>
   </div>
   <div class="row">
-    <div class="col-md-10"  style="background-color:none">
-        <img alt="selfimage.jpeg"  width="200" height="200" class="img-fluid img-circle pull-right" src="http://i1106.photobucket.com/albums/h372/pinchegato323/BEARS/SnackTimePandaBear.jpg">
+    <div class="col-md-6"  style="background-color:none">
+        <img alt="selfimage.jpeg"  width="200" height="200" class="img-fluid img-circle " src="http://i1106.photobucket.com/albums/h372/pinchegato323/BEARS/SnackTimePandaBear.jpg">
     </div>
  </div>
 
@@ -187,17 +189,21 @@ h2{
   <div class="row toprow"></div>
 
   <div class="row">
-  
+
      <div class="col-md-6 emailid">
-        <span>Contact Em@il</span> </br>
+        <span>Contact email</span> </br>
         <span>sunder.dev23@gmail.com </span>
       </div>
       <div class="col-md-6" >
         <div class="btn-group-vertical pull-right " >
-            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-facebook" aria-hidden="true">  Facebook</i></a>
+            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-twitter" aria-hidden="true"> Twitter</i></a>
+            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-github" aria-hidden="true"> Github</i></a>
+            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-instagram" aria-hidden="true"> Instagram</i></a>
+            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-quora" aria-hidden="true"> quora</i></a>
+            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-instagram" aria-hidden="true"> Instagram</i></a>
+
+
         </div>
       </div>
   </div>
