@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<hmtl lang="eng">
+<hmtl lang="en">
 <head>
   <meta charset="utf-8">
   <meta name= "author" content="sunder" >
   <meta name="keywords" content="portfolio,know,about,navya,sunder,reddy,chalimidi">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Sunder Portfolio </title>
+  <title>Portfolio Page </title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
 
@@ -15,7 +16,7 @@
 
 
   .pageOne{
-      background: url(https://hd.unsplash.com/photo-1465420961937-e0eba4dda519);
+      background: url(https://hd.unsplash.com/photo-1462121457351-9fb0f5622b72);
   }
 
   .pageTwo{
@@ -24,12 +25,12 @@
   }
 
   .pageThree{
-    background: url(https://hd.unsplash.com/photo-1459197648846-52de5e4d1e9a);
+    background: url(https://hd.unsplash.com/photo-1468476775582-6bede20f356f);
   }
 
   .pageFour{
+    background: url(https://hd.unsplash.com/photo-1465420961937-e0eba4dda519);
 
-    background:url(https://hd.unsplash.com/photo-1467173572719-f14b9fb86e5f);
   }
 
   .imageparent{
@@ -92,21 +93,38 @@ h3{
 
 .emailid{
   font-size: 2.5em;
-  color: white;
+  color: black;
   opacity: 0.9;
   text-align: center;
-  padding-top: 30px;
+  background-color: lightblue;
+  opacity: 0.7;
 }
 
 
 .btn:hover{
   background-color: white;
+  color: black;
+  opacity: 1;
 }
 
+.pagethreefirstrow{
+  height:100px;
+  text-align: center;
+  padding-top: 20px;
+  color: black;
 
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+.btnVertical{
+  padding-right: 0;
+}
 </style>
 
-<script   src="https://code.jquery.com/jquery-3.1.0.js"   ></script>
+
 </head>
 <body>
   <header >
@@ -127,16 +145,16 @@ h3{
             <div class="collapse navbar-collapse" id="bs">
 
               <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="#">Portfolio</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
 </header>
-<div class="pageOne imageparent">
+<div class="pageOne imageparent" id="home">
 <div class="row">
     <div class="intro">
         <h1 class="col-xs-12"> Sunder Chalimidi </h1>
@@ -146,31 +164,36 @@ h3{
   <div class="row">
     <div class="bl">
             <div class="btnList text-center">
-                <a class="btn btn-default col-xs-12 col-md-3" href="https://github.com/nsunder" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-                <a class="btn btn-default col-xs-12 col-md-3" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-                <a class="btn btn-default col-xs-12 col-md-3" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
-                <a class="btn btn-default col-xs-12 col-md-3" href="https://twitter.com/NavyaSundar23" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="https://github.com/nsunder" target="_blank" role="button"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="https://www.linkedin.com/in/sunder-chalimidi-685472108" target="_blank" role="button"><i class="fa fa-linkedin" aria-hidden="true" role="button"></i> LinkedIn</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="https://www.pinterest.com/sundarchalimidi/" target="_blank" role="button"><i class="fa fa-pinterest" aria-hidden="true" role="button"></i> Pinterest</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="https://twitter.com/NavyaSundar23" target="_blank" role="button"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="https://www.instagram.com/pinkuuss/" target="_blank" role="button"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="https://angel.co/sunder-chalimidi" target="_blank" role="button"><i class="fa fa-angellist" aria-hidden="true"></i> AngelList</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="https://www.facebook.com/navyasundar5" target="_blank" role="button"><i class="fa fa-facebook" aria-hidden="true"></i> facebook</a>
+                <a class="btn btn-default col-xs-12 col-md-3" href="https://getpocket.com/@7a0d1p15THD81gu3dSAc9e9Aa6gfT21e7f4IaXyY23d800h5drq59J9aab2PXfR0" target="_blank" role="button"><i class="fa fa-get-pocket" aria-hidden="true"></i> Pocket</a>
+
             </div>
     </div>
   </div>
 
 </div>
 
-<div class="pageTwo imageparent">
+<div class="pageTwo imageparent" id="about">
 <div class="container">
   <div class="row">
     <div class="col-md-6 ">
       <div class="sop">
         <p>
-          I am a C# Developer and a self taught JavaScript guy. Working on developing hybrid mobile applications using HTML, CSS,
+          I am a C# Developer and a self taught JavaScript programmer. Currently working on developing hybrid mobile applications using HTML, CSS,
           JavaScript, AngularJS and Ionic.
         </p>
       </div>
    </div>
   </div>
   <div class="row">
-    <div class="col-md-6"  style="background-color:none">
-        <img alt="selfimage.jpeg"  width="200" height="200" class="img-fluid img-circle " src="http://i1106.photobucket.com/albums/h372/pinchegato323/BEARS/SnackTimePandaBear.jpg">
+    <div class="col-md-6" >
+        <img alt="selfimage.jpeg"  width="200" height="200" class="img-fluid img-circle " src="images/myimage.jpeg">
     </div>
  </div>
 
@@ -179,38 +202,128 @@ h3{
 
 </div>
 
-<div class="pageThree imageparent">
+<div class="pageThree imageparent" id="portfolio">
+  <div class="container">
+ <div class="row pagethreefirstrow" >
+   <h2> Here is a sample of some of my works </h2>
+ </div>
 
+ <!-- Projects Row -->
+ <div class="row">
+     <div class="col-md-4 col-xs-3 portfolio-item">
+         <a href="#">
+             <img class="img-responsive" src="http://i1106.photobucket.com/albums/h372/pinchegato323/BEARS/SnackTimePandaBear.jpg" alt="">
+         </a>
+         <h3>
+             <a href="#">Project Name</a>
+         </h3>
+         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p> -->
+     </div>
+     <div class="col-md-4 col-xs-3 portfolio-item">
+         <a href="#">
+             <img class="img-responsive" src="http://i1106.photobucket.com/albums/h372/pinchegato323/BEARS/SnackTimePandaBear.jpg" alt="">
+         </a>
+         <h3>
+             <a href="#">Project Name</a>
+         </h3>
+         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p> -->
+     </div>
+     <div class="col-md-4 col-xs-3 portfolio-item">
+         <a href="#">
+             <img class="img-responsive" src="http://i1106.photobucket.com/albums/h372/pinchegato323/BEARS/SnackTimePandaBear.jpg" alt="">
+         </a>
+         <h3>
+             <a href="#">Project Name</a>
+         </h3>
+         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p> -->
+     </div>
+ </div>
+ <!-- /.row -->
 
+ <!-- Projects Row -->
+ <div class="row">
+     <div class="col-md-4 col-xs-3 portfolio-item">
+         <a href="#">
+             <img class="img-responsive" src="http://i1106.photobucket.com/albums/h372/pinchegato323/BEARS/SnackTimePandaBear.jpg" alt="">
+         </a>
+         <h3>
+             <a href="#">Project Name</a>
+         </h3>
+         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p> -->
+     </div>
+     <div class="col-md-4  col-xs-3 portfolio-item">
+         <a href="#">
+             <img class="img-responsive" src="http://i1106.photobucket.com/albums/h372/pinchegato323/BEARS/SnackTimePandaBear.jpg" alt="">
+         </a>
+         <h3>
+             <a href="#">Project Name</a>
+         </h3>
+         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p> -->
+     </div>
+     <div class="col-md-4 col-xs-3 portfolio-item">
+         <a href="#">
+             <img class="img-responsive" src="http://i1106.photobucket.com/albums/h372/pinchegato323/BEARS/SnackTimePandaBear.jpg" alt="">
+         </a>
+         <h3>
+             <a href="#">Project Name</a>
+         </h3>
+         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p> -->
+     </div>
+ </div>
+ <!-- /.row -->
+</div>
 </div>
 
-<div class="pageFour imageparent">
+<div class="pageFour imageparent" id="contact">
 <div class="container-fluid">
   <div class="row toprow"></div>
 
   <div class="row">
 
      <div class="col-md-6 emailid">
-        <span>Contact email</span> </br>
         <span>sunder.dev23@gmail.com </span>
       </div>
-      <div class="col-md-6" >
+      <div class="col-md-6 btnVertical" >
         <div class="btn-group-vertical pull-right " >
-            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-facebook" aria-hidden="true">  Facebook</i></a>
-            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-twitter" aria-hidden="true"> Twitter</i></a>
-            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-github" aria-hidden="true"> Github</i></a>
-            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-instagram" aria-hidden="true"> Instagram</i></a>
-            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-quora" aria-hidden="true"> quora</i></a>
-            <a href="https://www.facebook.com" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-instagram" aria-hidden="true"> Instagram</i></a>
-
-
+            <a href="https://www.facebook.com/navyasundar5" target="_blank" role="button" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-facebook" aria-hidden="true">  Facebook</i></a>
+            <a href="https://twitter.com/NavyaSundar23" target="_blank" role="button" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-twitter" aria-hidden="true"> Twitter</i></a>
+            <a href="https://github.com/nsunder" target="_blank" role="button" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-github" aria-hidden="true"> Github</i></a>
+            <a href="https://www.instagram.com/pinkuuss/" target="_blank" role="button" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-instagram" aria-hidden="true"> Instagram</i></a>
+            <a href="https://www.linkedin.com/in/sunder-chalimidi-685472108" target="_blank" role="button" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"> Linkedin</i></a>
+            <a href="https://www.pinterest.com/sundarchalimidi/" target="_blank" role="button" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"> Pinterest</i></a>
+            <a href="https://angel.co/sunder-chalimidi" target="_blank" role="button" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-angellist" aria-hidden="true"> Angellist</i></a>
+            <a href="https://getpocket.com/@7a0d1p15THD81gu3dSAc9e9Aa6gfT21e7f4IaXyY23d800h5drq59J9aab2PXfR0" target="_blank" role="button" class="btn btn-lg btn-default" target="_blank"><i class="fa fa-get-pocket" aria-hidden="true"> Pocket</i></a>
         </div>
       </div>
   </div>
 
-</div>
+
 </div>
 
+<!-- <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="list-inline">
+          <li> <a href="#">Home</a></li>
+          <li class="footer-menu-divider">.</li>
+          <li> <a href="#">About</a></li>
+          <li class="footer-menu-divider">.</li>
+          <li> <a href="#">Portfolio</a></li>
+          <li class="footer-menu-divider">.</li>
+          <li> <a href="#">Portfolio</a></li>
+        </ul>
+        <p class="copyright">Copyrights Reserved </p>
+        <h1> Hello World! </h1>
+      </div>
+    </div>
+ </div>
+</footer> -->
 
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
